@@ -9,3 +9,6 @@ phases:
             - make lint
             - make test
             - make format
+artifacts:
+    files:
+        - '**/*'
