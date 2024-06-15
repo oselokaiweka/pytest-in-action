@@ -6,9 +6,9 @@ test:
 	python -m pytest -vv --cov=src tests
 
 format:
-	black *.py 
+	black src
 
 lint:
-	pylint --disable=R,C src/
+	pylint --disable=R,C src
 
 all: install lint test format
