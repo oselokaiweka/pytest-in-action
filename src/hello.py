@@ -11,4 +11,4 @@ def more_bye():
 # var = var
 
 # Broken code syntax
-# foo =
+# food =
