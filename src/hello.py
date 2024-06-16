@@ -10,5 +10,5 @@ def more_bye():
 # var = 1
 # var = var
 
-# Broken code syntax
+# Broken code syntax test
 # food =
