@@ -2,9 +2,6 @@ version: 0.2
         
 phases:
     install:
-        runtime-versions:
-            python: 3.9.16
-            python: 3.10.13
         commands:
             - make install
             
