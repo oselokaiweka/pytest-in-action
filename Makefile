@@ -3,6 +3,7 @@ install:
 
 test:
 	python -m pytest -vv --cov=src tests
+	python -m pytest --nbval notebook.ipynb # Tests project jupyter notebook
 
 format:
 	black src
