@@ -8,8 +8,11 @@ test:
 debug:
 	python -m pytest -vv --pdb # Invoke debugger on test fail
 
-debugMaxfail:
+debug-maxfail:
 	python -m pytest -vv --pdb --maxfail=3 # Drop to pdb for first three failures
+
+one-test:
+	python -m pytest -vv tests/test_greeting.py::test_my_name4
 
 format:
 	black src
