@@ -2,11 +2,14 @@ import pytest
 
 from src.greeting import my_name
 
+
+
 def test_my_name():
     assert "My name is: bob" == my_name("bob")
 
 def test_my_name2():
     assert "My name is: bob2" == my_name("bob2")
+
 
 
 # Using @pytest.fixture decorators to provide test data
@@ -24,6 +27,7 @@ def test_my_name3(my_name3_data): # Pass fixture as arguement
 
 def test_my_name4(my_name4_data):
     assert my_name4_data == my_name("sally2")
+
 
 
 # Alternatively I can use one fixture to provide multiple testing data
