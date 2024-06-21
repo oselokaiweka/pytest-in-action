@@ -18,6 +18,6 @@ format:
 	black src mylib 
 
 lint:
-	pylint --disable=R,C src mylib
+	PYTHONPATH=$(PWD) pylint --disable=R,C src mylib
 
 all: install lint test format
