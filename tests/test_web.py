@@ -2,7 +2,7 @@ import pytest
 import json
 
 from src.web import app as flask_app
-
+from mylib.mkchange import change
 
 @pytest.fixture
 def app():
@@ -17,3 +17,7 @@ def test_index(app, client):
     assert result.status_code == 200
     assert {"hello": "jkuffor"} == json.loads(result.get_data(as_text=True))
     
+def test_change(app, client):
+    result = client.get("/change/1/35")
+    assert result.status_code == 200
+    assert [{'5': 'quarters'}, {'1': 'dimes'}] == json.loads(result.get_data(as_text=True))
