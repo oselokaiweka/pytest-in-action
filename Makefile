@@ -15,7 +15,7 @@ one-test:
 	python -m pytest -vv tests/test_greeting.py::test_my_name4
 
 format:
-	black src mylib
+	black src mylib 
 
 lint:
 	pylint --disable=R,C src mylib
